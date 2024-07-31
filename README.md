@@ -17,7 +17,102 @@ Through this thesis, we aim to contribute to the development of more robust and 
 ## Description
 This project develops an integrated system capable of performing object detection, object segmentation, and object classification using advanced machine learning algorithms and neural networks. This system is designed to enhance automated image processing applications by providing detailed and accurate analysis of digital images.
 
-## Proposed Architecture
+## Proposed Architecture for Object Classification  and object Detection 
+
+##### Proposed Architecture for Object Classification Using CNNs
+
+- ##### Introduction
+In the field of medical imaging, the accurate classification of diseases from image data is critical for diagnosis and treatment planning. Convolutional Neural Networks (CNNs) have emerged as a powerful tool for such tasks due to their ability to extract high-level features from images automatically.
+
+- ##### Objectives
+The main objective of this thesis is to develop a CNN-based model that can effectively classify x-based diseases from medical images. This involves:
+
+Developing a CNN architecture optimized for high accuracy in medical image analysis.
+Implementing image preprocessing techniques to enhance model performance.
+Validating the model's effectiveness on a well-defined dataset of medical images.
+
+- ##### CNN Architecture for Disease Classification
+ 1. Input Layer:
+
+     Accepts raw image data with dimensions suitable for the specific medical images used (e.g., 256x256 pixels).
+2. Convolutional Layers:
+     Several convolutional layers will be used, each followed by activation functions like ReLU to introduce non-linearity.
+     These layers will help in detecting various features in the images such as edges, textures, and other relevant patterns.
+3. Pooling Layers:
+
+     Pooling layers (max pooling) follow some of the convolutional layers to reduce the dimensionality of the data, which helps in reducing computational costs and 
+     overfitting.
+4. Fully Connected Layers:
+
+     After several convolutional and pooling layers, the high-level reasoning in the neural network occurs via fully connected layers.
+     A dropout layer will be included to prevent overfitting by randomly dropping units from the neural network during training.
+5. Output Layer:
+
+     The final layer is a softmax layer that provides the probabilities for each class of disease, facilitating a multi-class classification.
+     Preprocessing Techniques
+     Normalization: Scale pixel values to a range of 0 to 1 to aid in the training process by providing a common scale for all input features.
+     Data Augmentation: Techniques like rotation, zoom, and horizontal flipping will be used to artificially expand the training dataset. This helps in improving the  
+     robustness of the model by simulating various scenarios.
+- ##### Training the Model
+Dataset: A dataset comprising various labeled images of x-based diseases will be used. Each image will be tagged with a specific disease class, serving as the ground truth for training.
+- ##### Loss Function: Cross-entropy loss function, suitable for multi-class classification tasks.
+Optimizer: Adam optimizer, known for its efficiency in updating network weights iteratively based on training data.
+Metrics: Accuracy, Precision, Recall, and F1-Score will be measured to evaluate the model's performance.
+- ##### Expected Outcomes
+The expected outcome is a robust CNN model capable of classifying x-based diseases with high accuracy and precision. This model aims to assist medical professionals by providing reliable diagnostics through automated image classification.
+
+- ##### Conclusion
+This thesis will contribute to the biomedical imaging field by providing a deep learning solution that enhances the accuracy and efficiency of disease diagnosis, ultimately aiding in better patient management and treatment strategies.
+
+
+##### Proposed Architecture for Traffic Detection Using YOLO
+
+- ##### Introduction
+Effective traffic management and monitoring are critical in urban planning and safety enforcement. The YOLO (You Only Look Once) object detection system offers a fast and accurate method for identifying and classifying vehicles in real-time from video feeds. This technology has substantial applications in traffic flow control, incident detection, and automated enforcement of traffic laws.
+
+- ##### Objectives
+The primary objective of this thesis is to implement and evaluate a YOLO-based object detection system for real-time traffic monitoring. Specific goals include:
+
+Developing a customized YOLO model to detect various types of vehicles under different environmental conditions.
+Integrating the model with video surveillance systems to monitor traffic flow and detect incidents.
+Assessing the system’s effectiveness in real-world traffic scenarios.
+
+- ##### YOLO Architecture for Traffic Detection
+1. Input Layer:
+
+   Accepts video frames as input, typically resized to 416x416 pixels for optimal balance between speed and accuracy.
+2. Convolutional Layers:
+
+   The YOLO architecture utilizes several convolutional layers to extract feature maps from the input images. These layers detect features such as edges, colors, and
+   textures.
+4. Anchor Boxes:
+
+   YOLO uses predefined anchor boxes that are adjusted during training to match the aspect ratio and scale of vehicle classes being detected.
+4. Detection Layer:
+
+   The detection layer uses feature maps along with anchor boxes to predict class probabilities, objectness scores, and bounding box coordinates for each object.
+5. Output Processing:
+
+   Non-max suppression is used to eliminate overlapping boxes, ensuring that each detected object is counted only once.
+   Preprocessing Techniques
+   Frame Extraction: Extracting frames from video feeds at a rate suitable for real-time processing.
+   Image Standardization: Normalizing lighting and color variations in video frames to reduce environmental effects on detection accuracy.
+- ##### Training the Model
+Dataset: Utilization of a comprehensive dataset of vehicle images under various traffic and weather conditions, such as the COCO dataset or specialized traffic datasets.
+Loss Function: Combination of squared error loss for bounding box prediction and cross-entropy loss for class prediction and objectness.
+Optimizer: Stochastic Gradient Descent (SGD) or Adam, depending on experimentation results.
+Augmentation: Including random scaling, translations, and flipping to improve the robustness of the model against varied real-world conditions.
+Implementation
+Integration with Surveillance Systems: Implementing the trained YOLO model within existing traffic camera systems to analyze traffic flow in real-time.
+Real-time Processing: Ensuring the system operates at a frame rate fast enough to provide actionable insights for traffic management and incident response.
+- ##### Expected Outcomes
+The deployment of a YOLO-based detection system is expected to:
+Enhance traffic monitoring capabilities with high accuracy and real-time processing.
+Provide valuable data for traffic flow optimization and congestion management.
+Aid law enforcement by automatically detecting traffic violations and incidents.
+- ##### Conclusion
+This thesis aims to demonstrate the viability and effectiveness of YOLO for traffic detection in urban environments, offering a scalable and efficient solution for improving traffic management systems and contributing to safer and more efficient city infrastructures.
+
 
 
 ## Installation & Setting up enviroment
