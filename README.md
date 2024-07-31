@@ -17,6 +17,8 @@ Through this thesis, we aim to contribute to the development of more robust and 
 ## Description
 This project develops an integrated system capable of performing object detection, object segmentation, and object classification using advanced machine learning algorithms and neural networks. This system is designed to enhance automated image processing applications by providing detailed and accurate analysis of digital images.
 
+> #### Note :This synopsis outlines the proposed architecture for the project. As implementation has not yet begun, it is pending approval from the mentor at IIT Patna. Once approved, the implementation phase will commence. Further updates will be provided upon approval and initiation of the implementation process.
+
 ## Proposed Architecture for Object Classification  and object Detection 
 
 ##### Proposed Architecture for Object Classification Using CNNs
