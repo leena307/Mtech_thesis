@@ -114,7 +114,10 @@ Provide valuable data for traffic flow optimization and congestion management.
 Aid law enforcement by automatically detecting traffic violations and incidents.
 - ##### Conclusion
 This thesis aims to demonstrate the viability and effectiveness of YOLO for traffic detection in urban environments, offering a scalable and efficient solution for improving traffic management systems and contributing to safer and more efficient city infrastructures.
+## Differentiating Detection and Segmentation:
 
+- ##### Object Detection: Identifies and locates objects within an image, typically using bounding boxes. YOLO (You Only Look Once) is a prime example, designed for speed and efficiency in detecting objects in real-time scenarios like traffic monitoring.
+- ##### Object Segmentation: Goes a step further by partitioning an image into multiple segments, each representing a distinct object or part of an object. Segmentation provides pixel-level identification, which is more detailed than detection.
 
 
 ## Installation & Setting up enviroment
