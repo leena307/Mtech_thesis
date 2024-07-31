@@ -11,16 +11,17 @@ This project develops an integrated system capable of performing object detectio
 ## Installation
 To set up this project locally, follow the steps below:
 ```bash
-git clone https://github.com/yourgithubusername/object-analysis-system.git
+git clone https://github.com/leena307/Mtech_thesis.git
 cd object-analysis-system
 pip install -r requirements.txt
 
-
-
+```
 ## Usage
-To run the object detection, use the following command:
 
+To run the object detection, use the following command:
+```bash
 python detect_objects.py --image path/to/your/image.jpg
+```
 
 
 
@@ -30,33 +31,45 @@ python detect_objects.py --image path/to/your/image.jpg
 Python 3.8
 TensorFlow 2.x
 OpenCV 4.x
+```
 
-
-## System Requirements
+##  System Requirements
 
 ```bash
 Operating System: Windows 10 or Ubuntu 20.04
 RAM: 8GB or higher
 GPU: Optional but recommended for performance (CUDA-compatible GPU)
-Results
+```
+## Results
+```bash
 This section should describe the outcomes of your experiments, including the accuracy and efficiency of detection, segmentation, and classification tasks. Include sample images to illustrate the outputs of the system.
 
-Contributions
-To contribute to this project, follow these steps:
+```
 
+## Contributions
+To contribute to this project, follow these steps:
+```bash
 Fork the repository.
 Create your feature branch (git checkout -b feature/AmazingFeature).
 Commit your changes (git commit -am 'Add some AmazingFeature').
 Push to the branch (git push origin feature/AmazingFeature).
 Create a new Pull Request.
+```
 ## License
+
 ```bash
 This project is licensed under the MIT License - see the LICENSE.md file for details.
+```
 
 ## Authors
-Your Name - Initial work - YourGitHubProfile
-Acknowledgments
-Thanks to my thesis advisor, [Advisor's Name], for guidance and support.
+```bash
+Your Name - Leena Chatterjee
+```
+## Acknowledgments
+```bash
+Thanks to my thesis advisor for guidance and support.
 Grateful for the use of OpenCV, TensorFlow, etc.
-Inspired by Project or Paper Name.
+Inspired by 'Project or Paper Name'.
+
+```
 
